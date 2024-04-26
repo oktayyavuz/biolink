@@ -197,7 +197,6 @@ ul.links li:not(:last-child) {
   }
 }
 
-/* CSS untuk preloader */
 .preloader {
   position: fixed;
   top: 0;
@@ -220,7 +219,6 @@ ul.links li:not(:last-child) {
   animation: spin 5s linear infinite;
 }
 
-/* CSS untuk animasi putar */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
