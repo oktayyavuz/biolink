@@ -1,2 +1,2 @@
-# biolink
+# PROJEYİ KULLANMADAN ÖNCE Bİ YILDIZ ATARSANIZ ÇOK SEVİNİRİM.
 Dyto Bio Link HTML
