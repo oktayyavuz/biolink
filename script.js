@@ -8,7 +8,7 @@ actionLink.forEach((action) => {
 
     document.getElementById("toast").innerHTML = `
         <div class="toast-container">
-            <p>✅ Link <strong> ${action.parentElement.innerText} </strong> berhasil disalin!</p>
+            <p><strong> ${action.parentElement.innerText} </strong> </p>
         </div>
     `;
 
@@ -42,7 +42,7 @@ document.querySelectorAll(".sosmed i").forEach((sosmed) => {
 
 document.addEventListener("scroll", (e) => {
   document.querySelector(".bg-text-animation").style.transform = `translateX(${
-    window.scrollY / 5
+    window.scrollY / 10
   }px)`;
 });
 
