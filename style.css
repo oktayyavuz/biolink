@@ -157,12 +157,13 @@ ul.links li:not(:last-child) {
 }
 
 .toast-container {
-  background-color: blue;
-  color: #0f0f25;
+  background-color: black;
+  color: white;
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 1rem;
   animation: muncul 300ms ease-in-out;
+  opacity: 0.7;
 }
 
 .toast-gone {
