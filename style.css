@@ -19,7 +19,7 @@ body {
   font-family: "Outfit", sans-serif;
   padding-top: 4rem;
   padding-bottom: 2rem;
-  animation: slideBackground 100s linear infinite;
+  animation: slideBackground 20s linear infinite;
 }
 
 
