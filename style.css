@@ -1,0 +1,229 @@
+@import url('https://fonts.cdnfonts.com/css/more-sugar');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url(https://initiate.alphacoders.com/images/632/cropped-5120-2880-632051.png?419);
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  animation: slideBackground 100s linear infinite;
+}
+
+
+.my-photo {
+  width: 10rem;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid #2d2d56;
+  padding: 4px; 
+}
+
+.my-photo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home__name {
+  color: #ffff;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 15px;
+}
+
+.home__desc {
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+
+.sosmed {
+  margin-bottom: 0.8rem;
+}
+
+.sosmed i {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.sosmed i:hover {
+  color: #4848a1;
+}
+
+.sosmed a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+ul {
+  width: 90%;
+  max-width: 40rem;
+  padding: 0; 
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+ul.links li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.links {
+  margin-top: 1rem;
+}
+
+.link-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2d56;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 8px 10px 0 #0f0f25;
+  border: 2px solid #2d2d56;
+}
+
+.link-card:hover {
+  border: px solid white;
+}
+
+.links .link-icon {
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 0));
+  padding: 0.5rem;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links .link-icon i {
+  color: white;
+}
+
+.links .link-text {
+  text-align: center;
+  color: white;
+}
+
+.link-action {
+  color: #ff0000;
+  cursor: pointer;
+  padding: 10px;
+}
+
+
+.copyright {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+.copyright a:hover {
+  color: cyan;
+}
+
+#toast {
+  width: max-content;
+  position: fixed;
+  top: 0;
+}
+
+.toast-container {
+  background-color: white;
+  color: #0f0f25;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  animation: muncul 300ms ease-in-out;
+}
+
+.toast-gone {
+  animation: hilang 1s ease-in-out 1s;
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hilang {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* CSS untuk preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 5px solid #3498db;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 5s linear infinite;
+}
+
+/* CSS untuk animasi putar */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
