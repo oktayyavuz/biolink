@@ -11,17 +11,42 @@ html {
 }
 
 body {
-  background-image: url(https://i.hizliresim.com/i4pj4xj.jpg);
-  background-size: cover;
-  color: #000000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Outfit", sans-serif;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  animation: slideBackground 20s linear infinite;
+    background-image: url(https://i.hizliresim.com/i4pj4xj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    animation: slideBackground 20s linear infinite;
 }
+.button {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 0; 
+  padding: 0; 
+  margin: 0; 
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease; 
+  z-index: 1; 
+}
+
+  .button:hover {
+      opacity: 0.8; 
+  }
 
 
 .my-photo {
@@ -105,7 +130,7 @@ a {
 
 .sosmedred i:hover {
   color: #ee8b1b; 
-  text-shadow: 0 0 20px #ffffff; 
+  text-shadow: 0 0 15px #ffffff; 
 }
 
 
@@ -273,4 +298,28 @@ ul.links li:not(:last-child) {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+.toggle-music-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 50px;
+}
+
+    .toggle-music-button:hover {
+        background-color: #000000;
+        border-color: #ffffff;
+    }
+
+    .toggle-music-button i {
+        font-size: 24px;
+        color: #ffffff;
+    }
 
