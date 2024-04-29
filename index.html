@@ -8,15 +8,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/35c01bc3-ce32-47e8-8440-a5940ec0359c/cropped-slime_form_rimuru_tempest_vector_by_vexikku_dd1738p-pre-3.ico?v=1713947478624">
     <link rel="apple-touch-icon" href="https://cdn.glitch.global/35c01bc3-ce32-47e8-8440-a5940ec0359c/cropped-slime_form_rimuru_tempest_vector_by_vexikku_dd1738p-pre-3.ico?v=1713947478624">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
 </head>
 
 <body>
     
-<audio  autoplay loop>
-    <source src="https://cdn.glitch.global/b6f1a6f8-06f6-4472-b547-a5cae053b275/sarki.mp3?v=1714133590932" type="audio/mpeg">
-</audio>
+    <button id="toggleMusicButton" class="toggle-music-button" onclick="toggleAudio()">
+        <i id="musicIcon" class="fas fa-play"></i>
+    </button>
+
+    <audio id="myAudio" loop>
+        <source src="https://cdn.glitch.global/b6f1a6f8-06f6-4472-b547-a5cae053b275/sarki.mp3?v=1714133590932" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <button id="startMusicButton" class="button" onclick="startAudio()">Girmek İçin Tıklayınız!</button>
+    </div>
+
+ 
 
 
     <div class="photo-container">
@@ -138,7 +149,35 @@
     <div id="toast">
     </div>
 
+    <script>
+        var audio = document.getElementById("myAudio");
+        var toggleButton = document.getElementById("toggleMusicButton");
+        var musicIcon = document.getElementById("musicIcon");
+        var startButton = document.getElementById("startMusicButton");
+        var isMusicPlaying = false;
 
+        function toggleAudio() {
+            if (isMusicPlaying) {
+                audio.pause();
+                musicIcon.classList.remove("fa-pause");
+                musicIcon.classList.add("fa-play");
+            } else {
+                audio.play();
+                musicIcon.classList.remove("fa-play");
+                musicIcon.classList.add("fa-pause");
+            }
+            isMusicPlaying = !isMusicPlaying;
+        }
+
+        function startAudio() {
+            audio.play();
+            startButton.style.display = "none";
+            toggleButton.style.display = "block";
+            musicIcon.classList.remove("fa-play");
+            musicIcon.classList.add("fa-pause");
+            isMusicPlaying = true;
+        }
+    </script>
     <script src="/script.js"></script>
 
 </body>
