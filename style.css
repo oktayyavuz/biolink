@@ -30,7 +30,7 @@ body {
   object-fit: cover;
   object-position: top;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 3px solid #2d2d56;
+  border: 3px solid white;
   padding: 4px; 
 }
 
@@ -63,12 +63,131 @@ a {
 .sosmed i {
   font-size: 1.5rem;
   color: #ffffff;
+  transition: color 0.3s ease, text-shadow 1s ease; 
 }
 
 .sosmed i:hover {
-  color: #4848a1;
+  color: #ff0000; 
+  text-shadow: 0 0 20px #ffffff; 
+}
+.sosmedins {
+  margin-bottom: 0.8rem;
 }
 
+.sosmedins i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease, text-shadow 1s ease; 
+}
+
+.sosmedins i:hover {
+  color: #ccc343; 
+  text-shadow: 0 0 20px #ffffff; 
+}
+.sosmedx {
+  margin-bottom: 0.8rem;
+}
+
+.sosmedx i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease, text-shadow 1s ease; 
+}
+
+.sosmedx i:hover {
+  color: #000000; 
+  text-shadow: 0 0 15px #ffffff; 
+}
+
+.sosmedfb {
+  margin-bottom: 0.8rem;
+}
+
+.sosmedfb i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease, text-shadow 1s ease; 
+}
+
+.sosmedfb i:hover {
+  color: #9167f3; 
+  text-shadow: 0 0 20px #ffffff; 
+}
+
+.sosmedgit {
+  margin-bottom: 0.8rem;
+}
+
+.sosmedgit i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease, text-shadow 1s ease; 
+}
+
+.sosmedgit i:hover {
+  color: #0c0c0c; 
+  text-shadow: 0 0 15px #ffffff; 
+}
+
+.sosmeddc {
+  margin-bottom: 0.8rem;
+}
+
+.sosmeddc i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease, text-shadow 1s ease; 
+}
+
+.sosmeddc i:hover {
+  color: #578ef5; 
+  text-shadow: 0 0 20px #ffffff; 
+}
+
+.sosmedspot {
+  margin-bottom: 0.8rem;
+}
+
+.sosmedspot i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease, text-shadow 1s ease; 
+}
+
+.sosmedspot i:hover {
+  color: #41ff3a; 
+  text-shadow: 0 0 15px #ffffff; 
+}
+
+.sosmedred {
+  margin-bottom: 0.8rem;
+}
+
+.sosmedred i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease, text-shadow 1s ease; 
+}
+
+.sosmedred i:hover {
+  color: #ee8b1b; 
+  text-shadow: 0 0 20px #ffffff; 
+}
+
+.sosmedtwc {
+  margin-bottom: 0.8rem;
+}
+
+.sosmedtwc i {
+  font-size: 1.5rem;
+  color: #ffffff;
+  transition: color 0.3s ease, text-shadow 1s ease; 
+}
+
+.sosmedtwc i:hover {
+  color: #0059ff; 
+  text-shadow: 0 0 20px #ffffff; 
+}
 .sosmed a:not(:last-child) {
   margin-right: 1rem;
 }
@@ -98,18 +217,21 @@ ul.links li:not(:last-child) {
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  opacity: 0.8;
+  opacity: 1;
   gap: 1rem;
   padding: 1rem;
   border-radius: 20px;
   box-shadow: 8px 10px 0 #202121;
   border: 2px solid red;
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.9s ease; 
 }
 
 .link-card:hover {
-  border: px solid blue;
+  transform: scale(1.1) ; 
+  opacity: 1; 
+  border: 3px solid rgb(12, 12, 12);
+  box-shadow: none; 
 }
-
 .links .link-icon {
   background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 0));
   padding: 0.5rem;
@@ -121,7 +243,7 @@ ul.links li:not(:last-child) {
 }
 
 .links .link-icon i {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .links .link-text {
@@ -147,7 +269,8 @@ ul.links li:not(:last-child) {
 }
 
 .copyright a:hover {
-  color: green;
+  color: rgb(221, 100, 20);
+  font-size: 0.79rem;
 }
 
 #toast {
